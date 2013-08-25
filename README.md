@@ -7,7 +7,6 @@ HttpServer
 ```php
 use G\HttpServer\Builder;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 Builder::createBuiltInServer(function (Request $request) {
         return "Hello " . $request->get('name');
@@ -19,7 +18,6 @@ Builder::createBuiltInServer(function (Request $request) {
 ```php
 use G\HttpServer\Builder;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
 
@@ -43,7 +41,6 @@ https://github.com/reactphp/react
 ```php
 use G\HttpServer\Builder;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 Builder::createReactServer(function (Request $request) {
         return "Hello " . $request->get('name');
@@ -55,7 +52,6 @@ Builder::createReactServer(function (Request $request) {
 ```php
 use G\HttpServer\Builder;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
 
