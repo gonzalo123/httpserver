@@ -1,0 +1,18 @@
+{
+    "name":"gonzalo123/httpserver",
+    "description":"HTTP server in PHP. Using reactphp or Built-In Server",
+    "license":"MIT",
+    "keywords":["event-loop", "reactor", "HTTPServer", "server"],
+    "require": {
+        "react/react": "0.4.*@dev"
+    },
+    "require-dev": {
+        "symfony/process": "2.4.*@dev",
+        "silex/silex": "1.1.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "G": "lib"
+        }
+    }
+}
