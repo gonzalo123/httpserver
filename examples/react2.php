@@ -5,7 +5,7 @@ use G\HttpServer\Builder;
 use Symfony\Component\HttpFoundation\Request;
 
 $app = new Silex\Application();
-$app['debug'] = true;
+
 $app->get('/', function () {
         return 'Hello';
     });
